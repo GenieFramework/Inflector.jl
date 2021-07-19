@@ -192,7 +192,6 @@ const IRREGULAR_NOUNS = Vector{Tuple{String,String}}([
   ("louse", "lice"),
   ("mouse", "mice"),
   ("quiz", "quizzes"),
-  ("search", "searches"),
-  ("movie", "movies")
+  ("search", "searches")
 ])
 end
