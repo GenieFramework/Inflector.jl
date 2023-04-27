@@ -65,6 +65,14 @@ function from_underscores(word::String, underscore::String = "_") :: String
   mapreduce(x -> uppercasefirst(x), *, split(word, underscore))
 end
 
+"""
+    from_dashes(word::String) :: String
+
+Generates `SnakeCase` form of `word` from `dash_case`.
+"""
+function from_dashes(word::String, dash::String = "-") :: String
+  from_underscores(word, dash)
+end
 
 """
     is_singular(word::String) :: Bool
