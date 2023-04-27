@@ -1,7 +1,7 @@
 name = "Inflector"
 uuid = "6d011eab-0732-4556-8808-e463c76bf3b6"
 authors = ["Adrian Salceanu <e@essenciary.com> and contributors"]
-version = "1.0.1"
+version = "1.1.0"
 
 [deps]
 Unicode = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
