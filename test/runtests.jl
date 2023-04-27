@@ -15,14 +15,14 @@ using Test
     @testset "to_plural" begin
         @test Inflector.to_plural("category") == "categories"
         @test Inflector.to_plural("story") == "stories"
-        @test Inflector.to_plural("story", is_irregular = false) == "stories"
-        @test Inflector.to_plural("thesis", is_irregular = true) == "theses"
+        @test Inflector.to_plural("story") == "stories"
+        @test Inflector.to_plural("thesis") == "theses"
     end
 
     @testset "to_singular" begin
         @test Inflector.to_singular("categories") == "category"
         @test Inflector.to_singular("stories") == "story"
-        @test Inflector.to_singular("stories", is_irregular = false) == "story"
-        @test Inflector.to_singular("radii", is_irregular = true) == "radius"
+        @test Inflector.to_singular("stories") == "story"
+        @test Inflector.to_singular("radii") == "radius"
     end
 end
