@@ -15,13 +15,11 @@ using Test
     @testset "to_plural" begin
         @test Inflector.to_plural("category") == "categories"
         @test Inflector.to_plural("story") == "stories"
-        @test Inflector.to_plural("story") == "stories"
         @test Inflector.to_plural("thesis") == "theses"
     end
 
     @testset "to_singular" begin
         @test Inflector.to_singular("categories") == "category"
-        @test Inflector.to_singular("stories") == "story"
         @test Inflector.to_singular("stories") == "story"
         @test Inflector.to_singular("radii") == "radius"
     end
