@@ -23,6 +23,6 @@ using Test
         @test Inflector.to_singular("categories") == "category"
         @test Inflector.to_singular("stories") == "story"
         @test Inflector.to_singular("stories", is_irregular = false) == "story"
-        @test Inflector.to_singular("radii", is_irregular = false) == "radius"
+        @test Inflector.to_singular("radii", is_irregular = true) == "radius"
     end
 end
